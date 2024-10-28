@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    /* Element Selector */
+    div{
+        background-color: red;
+    }
+    
+    /* Class Selector */
+    .yellow{
+        background-color: yellow;
+    }
+
+    /* ID Selector */
+    #green{
+        background-color: rgb(85, 159, 85);
+    }
+
+    /* Child Selector */
+    div > p{
+        /* color: rgb(19, 26, 24); */
+        /* background-color: palegoldenrod; */
+    }
+
+    /* Descendent Selector */
+    div p{
+        color: rgb(160, 26, 162);
+        background-color: rgb(230, 230, 240);
+    }
+
+    /* Universal Selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Pseudo Selector */
+    a:visited{
+        color: brown;
+    }
+
+    a:link{
+        color: blueviolet;
+    }
+
+    a:active{
+
+    }
+
+    a:hover{
+
+    }
+
+    a:first-child{
+        color: aliceblue;
+    }
+
+</style>
+<body>
+
+    <div class="one">
+        This is one.
+    </div>
+    <div>
+        I am a div
+    </div>
+
+    <div class="yellow">
+        This is new div
+    </div>
+
+    <div id="green">This is the green div</div>
+
+    <div>
+        <p>This is the para for child selector</p>
+    </div>
+
+    <a href="https://www.google.com">Go to Facebook</a>
+    <a href="https://www.google2.com">Go to Facebook</a>
+</body>
+</html>
